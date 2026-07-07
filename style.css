@@ -631,3 +631,120 @@ h3 {
     font-size: clamp(2.55rem, 15vw, 4rem);
   }
 }
+
+/* Legal pages and cookie notice */
+.legal-hero {
+  min-height: 52vh;
+  background:
+    linear-gradient(rgba(7, 16, 29, 0.88), rgba(7, 16, 29, 0.88)),
+    url("assets/strategy-meeting.jpg") center/cover;
+}
+
+.legal-content {
+  max-width: 920px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(154, 110, 40, 0.18);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(25, 18, 10, 0.07);
+  padding: 42px;
+}
+
+.legal-content h2 {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.legal-content p {
+  color: var(--dark-muted);
+  margin-top: 14px;
+}
+
+.legal-content a {
+  color: #9a6e28;
+  font-weight: 800;
+}
+
+.legal-note {
+  padding: 18px;
+  border-radius: 18px;
+  background: #fff7e4;
+  border: 1px solid rgba(197, 155, 81, 0.24);
+}
+
+.cookie-banner {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2000;
+  display: none;
+}
+
+.cookie-banner.show {
+  display: block;
+}
+
+.cookie-content {
+  width: min(980px, 100%);
+  margin-inline: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+  color: var(--text);
+  background: rgba(7, 16, 29, 0.96);
+  border: 1px solid rgba(197, 155, 81, 0.34);
+  border-radius: 22px;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+}
+
+.cookie-content h3 {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.cookie-content p {
+  color: rgba(247, 242, 232, 0.78);
+  font-size: 0.92rem;
+}
+
+.cookie-content a {
+  color: var(--gold-light);
+  font-weight: 800;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-cookie {
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-cookie-primary {
+  border: 0;
+  color: #101827;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+}
+
+.btn-cookie-secondary {
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 720px) {
+  .legal-content { padding: 28px; }
+  .cookie-content { grid-template-columns: 1fr; }
+  .cookie-actions { justify-content: flex-start; }
+}

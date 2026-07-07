@@ -33,3 +33,14 @@ After adding the domain in Vercel, use the DNS records Vercel displays.
 Common current Vercel records:
 - A `@` -> `216.198.79.1`
 - CNAME `www` -> value shown by Vercel, usually `cname.vercel-dns.com` or a specific Vercel DNS hostname.
+
+## Legal pages and cookie notice
+
+This version includes:
+
+- `privacy.html`
+- `terms.html`
+- Cookie notice banner with Accept/Reject buttons
+- Footer links to Privacy Policy and Terms of Use
+
+The cookie preference is stored locally in the visitor's browser using `localStorage`.

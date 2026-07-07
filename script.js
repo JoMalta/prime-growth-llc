@@ -30,3 +30,31 @@ const revealOnScroll = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => revealOnScroll.observe(item));
+
+const cookieBanner = document.getElementById("cookieBanner");
+const acceptCookies = document.getElementById("acceptCookies");
+const rejectCookies = document.getElementById("rejectCookies");
+
+if (cookieBanner) {
+  const cookieChoice = localStorage.getItem("primeGrowthCookieChoice");
+
+  if (!cookieChoice) {
+    setTimeout(() => {
+      cookieBanner.classList.add("show");
+    }, 700);
+  }
+
+  if (acceptCookies) {
+    acceptCookies.addEventListener("click", () => {
+      localStorage.setItem("primeGrowthCookieChoice", "accepted");
+      cookieBanner.classList.remove("show");
+    });
+  }
+
+  if (rejectCookies) {
+    rejectCookies.addEventListener("click", () => {
+      localStorage.setItem("primeGrowthCookieChoice", "rejected");
+      cookieBanner.classList.remove("show");
+    });
+  }
+}
