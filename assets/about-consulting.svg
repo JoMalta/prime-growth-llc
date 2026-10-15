@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" aria-hidden="true" focusable="false">
+  <!-- Abstract roadmap: assessment -> priorities -> plan -> execution. Decorative only. -->
+  <rect width="640" height="520" rx="8" fill="#0b1626"/>
+  <path d="M84 420 C 180 420, 180 300, 290 300 S 400 190, 520 150" fill="none" stroke="#26406a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M84 420 C 180 420, 180 300, 290 300 S 400 190, 520 150" fill="none" stroke="#c9a35a" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14"/>
+  <!-- milestones -->
+  <g>
+    <circle cx="84" cy="420" r="26" fill="#13223a" stroke="#c9a35a" stroke-width="4"/>
+    <circle cx="212" cy="352" r="22" fill="#13223a" stroke="#5b7aa8" stroke-width="3"/>
+    <circle cx="352" cy="268" r="22" fill="#13223a" stroke="#5b7aa8" stroke-width="3"/>
+    <circle cx="520" cy="150" r="34" fill="#c9a35a"/>
+    <path d="M506 150 l10 10 l18 -20" fill="none" stroke="#0b1626" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- cards near milestones -->
+  <g fill="#13223a">
+    <rect x="120" y="440" width="150" height="44" rx="6"/>
+    <rect x="236" y="380" width="150" height="44" rx="6"/>
+    <rect x="384" y="296" width="150" height="44" rx="6"/>
+    <rect x="380" y="68" width="180" height="48" rx="6"/>
+  </g>
+  <g fill="#26406a">
+    <rect x="136" y="456" width="90" height="8" rx="4"/>
+    <rect x="252" y="396" width="104" height="8" rx="4"/>
+    <rect x="400" y="312" width="80" height="8" rx="4"/>
+    <rect x="398" y="86" width="120" height="8" rx="4"/>
+  </g>
+</svg>
